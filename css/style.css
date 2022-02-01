@@ -1,0 +1,78 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+FONT WEIGHTS:
+
+
+LINE HEIGHTS:
+Default: 1
+
+--- 02 COLORS
+- Primary: #e67e22
+- Tints:
+- Shades: 
+- Accents: 
+- Greys: 
+#555
+#333
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+- SPACING SYSTEM (PX)
+  2 / 4 /8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+images: unsplash.com
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px */
+  /* 10px / 16px = 0.625 = 62.5% (browser default is 16px) */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  max-width: 100%;
+}

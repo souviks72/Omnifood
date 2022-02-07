@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -81,6 +81,7 @@ body {
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+  font-weight: 600;
 
   /* Always put transition on original state of the element */
   transition: background-color 0.3s;
@@ -132,4 +133,38 @@ body {
   /* Whenever we have these utility classes we should make sure
   they apply no matter what, so use "!important" to give it highest specificity */
   margin-right: 1.6rem !important;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  /* Always make sure border is of same color as background when creating a ring border like this */
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin-right: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #e67e22;
+  font-weight: 700;
 }

@@ -1,5 +1,6 @@
 /* 
-
+yeun.github.io/open-color
+tin and shade generator
 --- 01 TYPOGRAPHY SYSTEM
 - FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
@@ -40,6 +41,10 @@ Default: 9px
 -0.5px
 0.75px
 
+- BORDER RADIUS
+small 9px
+medium 11px
+
 images: unsplash.com
 */
 * {
@@ -60,6 +65,10 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+strong {
+  font-weight: 500;
 }
 
 /* ****************************************** 

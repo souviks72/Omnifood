@@ -152,7 +152,7 @@ strong {
   font-weight: 600;
 
   /* Always put transition on original state of the element */
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -187,8 +187,19 @@ strong {
     it will be a line, not a shadow per se*/
 }
 
+/* HELPER CLASSES */
+
+.center-text {
+  /* Set it on parent element or set it on block element */
+  text-align: center;
+}
+
 .margin-right-sm {
   /* Whenever we have these utility classes we should make sure
     they apply no matter what, so use "!important" to give it highest specificity */
   margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
 }

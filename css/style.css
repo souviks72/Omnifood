@@ -221,6 +221,12 @@ MEALS SECTION
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
 }
 
 .meal-content {
@@ -286,4 +292,53 @@ MEALS SECTION
   /* stroke: #e67e22;
   fill: #e67e22; */
   color: #e67e22;
+}
+
+.list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #e67e22;
+  /* Give underline to links using border-bottom, it looks better */
+  border-bottom: 1px solid currentColor;
+  /* currentColor is a keyword that refers to current font color */
+  padding-bottom: 2px;
+
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  /* To make a border invisible,dont set it to none,
+  instead make it transparent, making it none will shift pixels and hence
+  elements upwards as border is a part of the size of the element */
+  border-bottom: 1px solid transparent;
 }

@@ -538,6 +538,20 @@ CALL TO ACTION SECTION
 }
 
 .cta-text-box {
+  color: #2e1907;
+  /* Having a large text gives the impression that there is a lot more space at the top */
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta .heading-secondary {
+  color: #2e1907;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
 }
 
 .cta-img-box {
@@ -549,4 +563,24 @@ CALL TO ACTION SECTION
     url("../img/eating.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input {
+}
+
+.cta-form select {
 }

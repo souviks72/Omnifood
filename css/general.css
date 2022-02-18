@@ -151,6 +151,7 @@ strong {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -160,6 +161,11 @@ strong {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   font-weight: 600;
+
+  /* Only necessary for .btn(actual button element) */
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
 
   /* Always put transition on original state of the element */
   transition: all 0.3s;
@@ -195,6 +201,23 @@ strong {
   /* inset will apply border radius on the inside */
   /* No vertical and horizontal offset, no blurr, means 
     it will be a line, not a shadow per se*/
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER CLASSES */
